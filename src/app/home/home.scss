@@ -3068,11 +3068,10 @@ html {
 }
 
 
-/* PATCH FINAL — HEADER MOBILE COFFEE BLUE */
+/* PATCH FINAL — MENU MOBILE COMPACTO */
 @media (max-width: 920px) {
-  .header {
-    min-height: 74px !important;
-    padding: 0 !important;
+  .header,
+  .header__inner {
     overflow: visible !important;
   }
 
@@ -3082,8 +3081,7 @@ html {
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
-    gap: 0.75rem !important;
-    position: relative !important;
+    gap: .75rem !important;
     padding-inline: 1rem !important;
   }
 
@@ -3094,7 +3092,7 @@ html {
     min-width: 112px !important;
     height: 64px !important;
     flex: 0 0 112px !important;
-    z-index: 80 !important;
+    z-index: 140 !important;
   }
 
   .header .logo__image,
@@ -3108,22 +3106,16 @@ html {
   .header__actions {
     display: flex !important;
     align-items: center !important;
-    justify-content: flex-end !important;
-    gap: 0.65rem !important;
-    flex: 0 0 auto !important;
-    z-index: 90 !important;
+    gap: .65rem !important;
+    z-index: 150 !important;
   }
 
   .nav__cta {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
     min-height: 42px !important;
-    padding: 0.65rem 0.95rem !important;
+    padding: .65rem .95rem !important;
     border-radius: 999px !important;
-    font-size: 0.78rem !important;
+    font-size: .78rem !important;
     white-space: nowrap !important;
-    line-height: 1 !important;
   }
 
   .menu-toggle {
@@ -3132,19 +3124,17 @@ html {
     height: 44px !important;
     min-width: 44px !important;
     border-radius: 999px !important;
-    border: 1px solid rgba(227, 182, 75, 0.45) !important;
-    background: rgba(2, 20, 44, 0.92) !important;
+    border: 1px solid rgba(227, 182, 75, .45) !important;
+    background: rgba(2, 20, 44, .92) !important;
     align-items: center !important;
     justify-content: center !important;
     flex-direction: column !important;
     gap: 5px !important;
     padding: 0 !important;
-    cursor: pointer !important;
-    box-shadow: 0 14px 32px rgba(2, 20, 44, 0.24) !important;
+    z-index: 160 !important;
   }
 
   .menu-toggle__bar {
-    display: block !important;
     width: 18px !important;
     height: 2px !important;
     border-radius: 999px !important;
@@ -3168,25 +3158,21 @@ html {
     position: absolute !important;
     left: 1rem !important;
     right: 1rem !important;
-    top: calc(100% + 0.65rem) !important;
-    z-index: 70 !important;
-    border-radius: 24px !important;
-    border: 1px solid rgba(227, 182, 75, 0.22) !important;
-    background:
-      radial-gradient(circle at top left, rgba(227, 182, 75, 0.14), transparent 38%),
-      rgba(2, 20, 44, 0.98) !important;
-    box-shadow: 0 26px 70px rgba(2, 20, 44, 0.38) !important;
-    padding: 0.8rem !important;
-    max-height: calc(100vh - 100px) !important;
+    top: calc(100% + .75rem) !important;
+    z-index: 130 !important;
+    height: auto !important;
+    max-height: calc(100vh - 130px) !important;
     overflow-y: auto !important;
+    padding: 1rem !important;
+    border-radius: 24px !important;
+    border: 1px solid rgba(227, 182, 75, .34) !important;
+    background: linear-gradient(145deg, rgba(2, 20, 44, .99), rgba(8, 33, 59, .99)) !important;
+    box-shadow: 0 28px 80px rgba(2, 20, 44, .48) !important;
     opacity: 0 !important;
     visibility: hidden !important;
     pointer-events: none !important;
-    transform: translateY(-10px) scale(0.98) !important;
-    transition:
-      opacity 180ms ease,
-      visibility 180ms ease,
-      transform 180ms ease !important;
+    transform: translateY(-10px) scale(.98) !important;
+    transition: opacity 180ms ease, visibility 180ms ease, transform 180ms ease !important;
   }
 
   .nav.nav--open {
@@ -3197,12 +3183,12 @@ html {
   }
 
   .nav__list {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 0.25rem !important;
-    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: .45rem !important;
+    width: 100% !important;
     margin: 0 !important;
-    list-style: none !important;
+    padding: 0 !important;
   }
 
   .nav__item {
@@ -3211,38 +3197,31 @@ html {
 
   .nav__link {
     width: 100% !important;
-    min-height: 46px !important;
+    min-height: 52px !important;
     display: flex !important;
     align-items: center !important;
-    justify-content: flex-start !important;
-    padding: 0.78rem 1rem !important;
-    border-radius: 16px !important;
+    padding: .9rem 1.05rem !important;
+    border-radius: 18px !important;
     color: #f7efe1 !important;
-    font-size: 0.96rem !important;
-    font-weight: 600 !important;
-    letter-spacing: 0.01em !important;
+    background: rgba(255, 255, 255, .045) !important;
+    border: 1px solid rgba(255, 255, 255, .06) !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
     text-decoration: none !important;
-    border: 1px solid transparent !important;
-    transition:
-      background 160ms ease,
-      border-color 160ms ease,
-      color 160ms ease,
-      transform 160ms ease !important;
   }
 
   .nav__link:hover,
   .nav__link:focus-visible {
-    background: rgba(255, 255, 255, 0.08) !important;
-    border-color: rgba(227, 182, 75, 0.25) !important;
     color: #e3b64b !important;
-    transform: translateX(3px) !important;
+    background: rgba(227, 182, 75, .12) !important;
+    border-color: rgba(227, 182, 75, .32) !important;
   }
 }
 
 @media (max-width: 520px) {
   .header__inner {
-    padding-inline: 0.75rem !important;
-    gap: 0.45rem !important;
+    padding-inline: .75rem !important;
+    gap: .45rem !important;
   }
 
   .header .logo,
@@ -3264,8 +3243,8 @@ html {
 
   .nav__cta {
     min-height: 38px !important;
-    padding: 0.58rem 0.75rem !important;
-    font-size: 0.7rem !important;
+    padding: .58rem .75rem !important;
+    font-size: .7rem !important;
     max-width: 132px !important;
   }
 
@@ -3276,165 +3255,17 @@ html {
   }
 
   .nav {
-    left: 0.75rem !important;
-    right: 0.75rem !important;
-    top: calc(100% + 0.5rem) !important;
+    left: .75rem !important;
+    right: .75rem !important;
+    top: calc(100% + .6rem) !important;
+    padding: .85rem !important;
     border-radius: 20px !important;
   }
 
   .nav__link {
-    min-height: 44px !important;
-    padding: 0.72rem 0.9rem !important;
-    font-size: 0.92rem !important;
-  }
-}
-
-@media (max-width: 380px) {
-  .nav__cta {
-    display: none !important;
-  }
-
-  .header .logo,
-  .header.header--scrolled .logo,
-  .header__inner .logo {
-    width: 110px !important;
-    min-width: 110px !important;
-    flex-basis: 110px !important;
-  }
-
-  .header .logo__image,
-  .header.header--scrolled .logo__image,
-  .header__inner .logo__image {
-    height: 48px !important;
-    max-height: 48px !important;
-    max-width: 110px !important;
-  }
-}
-
-
-/* PATCH FINAL — MENU MOBILE ABERTO MAIOR E FECHAMENTO */
-@media (max-width: 920px) {
-  .header {
-    overflow: visible !important;
-  }
-
-  .header__inner {
-    overflow: visible !important;
-  }
-
-  .nav {
-    position: absolute !important;
-    left: 1rem !important;
-    right: 1rem !important;
-    top: calc(100% + 0.8rem) !important;
-    width: auto !important;
-    min-height: auto !important;
-    height: auto !important;
-    max-height: calc(100vh - 130px) !important;
-    overflow-y: auto !important;
-    z-index: 120 !important;
-
-    padding: 1rem !important;
-    border-radius: 26px !important;
-    border: 1px solid rgba(227, 182, 75, 0.34) !important;
-
-    background:
-      radial-gradient(circle at 12% 0%, rgba(227, 182, 75, 0.18), transparent 34%),
-      linear-gradient(145deg, rgba(2, 20, 44, 0.99), rgba(8, 33, 59, 0.99)) !important;
-
-    box-shadow: 0 28px 80px rgba(2, 20, 44, 0.48) !important;
-
-    opacity: 0 !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
-    transform: translateY(-10px) scale(0.98) !important;
-    transition:
-      opacity 180ms ease,
-      visibility 180ms ease,
-      transform 180ms ease !important;
-  }
-
-  .nav.nav--open {
-    opacity: 1 !important;
-    visibility: visible !important;
-    pointer-events: auto !important;
-    transform: translateY(0) scale(1) !important;
-  }
-
-  .nav__list {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 0.45rem !important;
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  .nav__item {
-    display: block !important;
-    width: 100% !important;
-  }
-
-  .nav__link {
-    width: 100% !important;
-    min-height: 52px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-
-    padding: 0.9rem 1.05rem !important;
-    border-radius: 18px !important;
-
-    color: #f7efe1 !important;
-    background: rgba(255, 255, 255, 0.045) !important;
-    border: 1px solid rgba(255, 255, 255, 0.06) !important;
-
-    font-size: 1rem !important;
-    font-weight: 700 !important;
-    line-height: 1.1 !important;
-    letter-spacing: 0.01em !important;
-    text-decoration: none !important;
-  }
-
-  .nav__link:hover,
-  .nav__link:focus-visible {
-    color: #e3b64b !important;
-    background: rgba(227, 182, 75, 0.12) !important;
-    border-color: rgba(227, 182, 75, 0.32) !important;
-  }
-
-  .menu-toggle {
-    z-index: 140 !important;
-  }
-
-  .header__actions {
-    z-index: 140 !important;
-  }
-
-  .nav__cta {
-    z-index: 140 !important;
-  }
-}
-
-@media (max-width: 520px) {
-  .nav {
-    left: 0.8rem !important;
-    right: 0.8rem !important;
-    top: calc(100% + 0.7rem) !important;
-    padding: 0.85rem !important;
-    border-radius: 22px !important;
-    max-height: calc(100vh - 120px) !important;
-  }
-
-  .nav__list {
-    gap: 0.38rem !important;
-  }
-
-  .nav__link {
     min-height: 50px !important;
-    padding: 0.86rem 0.95rem !important;
-    font-size: 0.96rem !important;
-    border-radius: 16px !important;
+    padding: .82rem .95rem !important;
+    font-size: .96rem !important;
   }
 }
 
