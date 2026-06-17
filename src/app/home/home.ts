@@ -498,6 +498,18 @@ export class Home {
     this.isHeroVideoMuted.set(true);
   }
 
+
+  closeSelectedCeo(): void {
+    if (!this.selectedCeo() || this.isCeoClosing()) return;
+
+    this.isCeoClosing.set(true);
+
+    window.setTimeout(() => {
+      this.selectedCeo.set(null);
+      this.isCeoClosing.set(false);
+    }, 360);
+  }
+
   toggleMenu(): void {
     this.isMenuOpen.update((open) => !open);
   }
@@ -591,14 +603,43 @@ export class Home {
     },
   ];
 
+  readonly isCeoClosing = signal(false);
   readonly selectedCeo = signal<CeoMember | null>(null);
 
   selectCeo(member: CeoMember): void {
+    this.isCeoClosing.set(false);
     this.selectedCeo.set(member);
   }
 
   closeCeo(): void {
     this.selectedCeo.set(null);
+  }
+
+
+  @HostListener('document:click', ['$event'])
+  onCeoDocumentClick(event: MouseEvent): void {
+    if (!this.selectedCeo()) return;
+
+    const target = event.target as HTMLElement | null;
+    if (!target) return;
+
+    const clickedInsideCeoCard = target.closest(
+      '.ceo-card, .ceos__card, .ceo-member, .ceo-profile-card, .ceo-person, [data-ceo-card]'
+    );
+
+    const clickedInsideCeoDetails = target.closest(
+      '.ceo-detail, .ceo-details, .ceo-modal, .ceo-expanded, .ceo-profile, .ceo-dialog, .ceo-overlay, [data-ceo-details]'
+    );
+
+    const clickedCloseButton = target.closest(
+      'button, a, [role="button"]'
+    );
+
+    if (clickedInsideCeoCard || clickedInsideCeoDetails || clickedCloseButton) {
+      return;
+    }
+
+    this.closeSelectedCeo();
   }
 
   @HostListener('document:keydown.escape')

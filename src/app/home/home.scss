@@ -2804,72 +2804,266 @@ html {
 }
 
 
-/* PATCH FINAL — LOGOS HEADER E FOOTER */
+/* PATCH DEFINITIVO — HEADER LOGO BRANCA NO AZUL */
 .header .logo,
-.header__inner .logo {
-  width: auto !important;
-  min-width: 118px !important;
-  height: 74px !important;
+.header__inner .logo,
+.header.header--scrolled .logo {
+  position: relative !important;
+  width: 150px !important;
+  min-width: 150px !important;
+  height: 78px !important;
+  flex: 0 0 150px !important;
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  flex-shrink: 0 !important;
+  overflow: visible !important;
+  z-index: 50 !important;
 }
 
-.header .logo__image,
-.header__inner .logo__image,
-.logo__image {
+.header .logo__image {
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
   width: auto !important;
-  height: 58px !important;
-  max-height: 58px !important;
-  max-width: 132px !important;
+  height: 64px !important;
+  max-height: 64px !important;
+  max-width: 150px !important;
   object-fit: contain !important;
   display: block !important;
-  transform: none !important;
+  transform: translate(-50%, -50%) !important;
+  transition: opacity 160ms ease, visibility 160ms ease !important;
+}
+
+/* Página no topo / Hero / header azul: mostra a logo branca */
+.header:not(.header--scrolled) .logo__image--white {
   opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 2 !important;
 }
 
-.header.header--scrolled .logo,
-.header--scrolled .logo {
-  height: 74px !important;
+.header:not(.header--scrolled) .logo__image--blue {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  z-index: 1 !important;
 }
 
-.header.header--scrolled .logo__image,
-.header--scrolled .logo__image {
-  height: 58px !important;
-  max-height: 58px !important;
-  transform: none !important;
+/* Depois do scroll / header branco: mostra a logo azul */
+.header.header--scrolled .logo__image--blue {
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 2 !important;
 }
 
-.footer__logo-img,
-.footer img[alt="Blue Coffee"] {
-  width: auto !important;
-  height: 46px !important;
-  max-height: 46px !important;
-  max-width: 140px !important;
-  object-fit: contain !important;
-  display: block !important;
-  margin: 0 auto 1rem !important;
+.header.header--scrolled .logo__image--white {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  z-index: 1 !important;
 }
 
 @media (max-width: 760px) {
   .header .logo,
-  .header__inner .logo {
-    min-width: 96px !important;
-    height: 64px !important;
+  .header__inner .logo,
+  .header.header--scrolled .logo {
+    width: 120px !important;
+    min-width: 120px !important;
+    height: 68px !important;
+    flex-basis: 120px !important;
   }
 
-  .header .logo__image,
-  .header__inner .logo__image,
-  .logo__image {
-    height: 48px !important;
-    max-height: 48px !important;
-    max-width: 110px !important;
-  }
-
-  .footer__logo-img,
-  .footer img[alt="Blue Coffee"] {
-    height: 40px !important;
-    max-height: 40px !important;
+  .header .logo__image {
+    height: 52px !important;
+    max-height: 52px !important;
+    max-width: 120px !important;
   }
 }
+
+
+/* PATCH FINAL — LOGO EXCLUSIVA DO FOOTER */
+.footer-logo-blue-coffee {
+  width: auto !important;
+  height: 64px !important;
+  max-height: 64px !important;
+  max-width: 150px !important;
+  object-fit: contain !important;
+  display: block !important;
+  margin: 0 auto 1rem !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  position: static !important;
+}
+
+@media (max-width: 760px) {
+  .footer-logo-blue-coffee {
+    height: 52px !important;
+    max-height: 52px !important;
+    max-width: 120px !important;
+  }
+}
+
+
+/* PATCH FOOTER LOGO EXCLUSIVA */
+.footer-logo-blue-coffee {
+  display: block !important;
+  width: auto !important;
+  height: 64px !important;
+  max-height: 64px !important;
+  max-width: 180px !important;
+  object-fit: contain !important;
+  margin: 0 auto 1rem !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+@media (max-width: 760px) {
+  .footer-logo-blue-coffee {
+    height: 56px !important;
+    max-height: 56px !important;
+    max-width: 150px !important;
+  }
+}
+
+
+/* PATCH FINAL — ANIMACAO CEO ABRIR FECHAR */
+@keyframes ceoDetailOpen {
+  0% {
+    opacity: 0;
+    transform: translateY(28px) scale(0.94);
+    filter: blur(8px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes ceoDetailClose {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(26px) scale(0.94);
+    filter: blur(8px);
+  }
+}
+
+@keyframes ceoPhotoOpen {
+  0% {
+    opacity: 0;
+    transform: translateX(-34px) scale(0.96);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes ceoTextOpen {
+  0% {
+    opacity: 0;
+    transform: translateX(34px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes ceoPhotoClose {
+  0% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-30px) scale(0.96);
+  }
+}
+
+@keyframes ceoTextClose {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+}
+
+.ceo-detail,
+.ceo-details,
+.ceo-modal,
+.ceo-expanded,
+.ceo-profile,
+.ceo-dialog,
+.ceo-overlay,
+[data-ceo-details] {
+  transform-origin: center center;
+  will-change: opacity, transform, filter;
+}
+
+.ceo-detail--opening {
+  animation: ceoDetailOpen 360ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.ceo-detail--closing {
+  pointer-events: none !important;
+  animation: ceoDetailClose 320ms cubic-bezier(0.64, 0, 0.78, 0) both;
+}
+
+.ceo-detail--opening img,
+.ceo-detail--opening .ceo-detail__image,
+.ceo-detail--opening .ceo-profile__image,
+.ceo-detail--opening .ceo-modal__image {
+  animation: ceoPhotoOpen 420ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.ceo-detail--opening .ceo-detail__content,
+.ceo-detail--opening .ceo-profile__content,
+.ceo-detail--opening .ceo-modal__content,
+.ceo-detail--opening .ceo-info,
+.ceo-detail--opening .ceo-text {
+  animation: ceoTextOpen 420ms cubic-bezier(0.22, 1, 0.36, 1) 60ms both;
+}
+
+.ceo-detail--closing img,
+.ceo-detail--closing .ceo-detail__image,
+.ceo-detail--closing .ceo-profile__image,
+.ceo-detail--closing .ceo-modal__image {
+  animation: ceoPhotoClose 280ms cubic-bezier(0.64, 0, 0.78, 0) both;
+}
+
+.ceo-detail--closing .ceo-detail__content,
+.ceo-detail--closing .ceo-profile__content,
+.ceo-detail--closing .ceo-modal__content,
+.ceo-detail--closing .ceo-info,
+.ceo-detail--closing .ceo-text {
+  animation: ceoTextClose 260ms cubic-bezier(0.64, 0, 0.78, 0) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ceo-detail--opening,
+  .ceo-detail--closing,
+  .ceo-detail--opening img,
+  .ceo-detail--closing img,
+  .ceo-detail--opening .ceo-detail__content,
+  .ceo-detail--closing .ceo-detail__content,
+  .ceo-detail--opening .ceo-profile__content,
+  .ceo-detail--closing .ceo-profile__content,
+  .ceo-detail--opening .ceo-modal__content,
+  .ceo-detail--closing .ceo-modal__content {
+    animation: none !important;
+  }
+}
+

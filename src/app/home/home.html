@@ -2,19 +2,18 @@
 
 <header class="header" [class.header--scrolled]="isScrolled()">
   <div class="container header__inner">
-    <a class="logo" href="#hero" (click)="goToAnchor('#hero', $event)">
-
-          <img
-            class="logo__image logo__image--dark"
-            src="assets/designs/coffee-blue-design-03.png"
-            alt="Blue Coffee"
-          />
-          <img
-            class="logo__image logo__image--light"
-            src="assets/brand/header-logo-blue.png"
-            alt="Blue Coffee"
-          />
-</a>
+    <a class="logo" href="#hero" (click)="goToAnchor('#hero', $event)" aria-label="Voltar ao início">
+      <img
+        class="logo__image logo__image--white"
+        src="assets/brand/header-logo-white.png"
+        alt="Blue Coffee"
+      />
+      <img
+        class="logo__image logo__image--blue"
+        src="assets/brand/header-logo-blue.png"
+        alt="Blue Coffee"
+      />
+    </a>
 
     <nav
       class="nav"
@@ -26,7 +25,7 @@
         @for (link of navLinks; track link.label) {
           <li class="nav__item">
             @if (link.routerLink) {
-              <a class="nav__link" [routerLink]="link.routerLink" (click)="closeMenu()">{{
+              <a class="nav__link" [routerLink]="link.routerLink" (click)="closeSelectedCeo()">{{
                 link.label
               }}</a>
             } @else {
@@ -463,7 +462,7 @@
 <footer class="footer">
   <div class="container footer__inner">
     <a class="footer__brand" routerLink="/">
-      <img class="footer__logo-img" src="assets/designs/coffee-blue-design-04.png" alt="Blue Coffee" loading="lazy" />
+      <img class="footer-logo-blue-coffee" src="assets/brand/header-logo-white.png" alt="Blue Coffee" loading="lazy" />
     </a>
     <p class="footer__slogan">Blue Coffee — Mais que café, uma experiência.</p>
     <p class="footer__copy">© 2026 Blue Coffee. Todos os direitos reservados.</p>
