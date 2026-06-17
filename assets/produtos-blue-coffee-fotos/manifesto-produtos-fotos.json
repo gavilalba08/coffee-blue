@@ -1,0 +1,234 @@
+[
+  {
+    "idx": 1,
+    "produto": "Blue Cacao",
+    "categoria": "cafes-especiais",
+    "arquivo_png_limpo": "cafes-especiais/01-blue-cacao.png",
+    "arquivo_original": "cafes-especiais/01-blue-cacao.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/cafes-especiais/01-blue-cacao.png"
+  },
+  {
+    "idx": 2,
+    "produto": "Blue Oat Latte",
+    "categoria": "bebidas-prontas",
+    "arquivo_png_limpo": "bebidas-prontas/02-blue-oat-latte.png",
+    "arquivo_original": "bebidas-prontas/02-blue-oat-latte.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/bebidas-prontas/02-blue-oat-latte.png"
+  },
+  {
+    "idx": 3,
+    "produto": "Blue Cold Brew Zero",
+    "categoria": "bebidas-prontas",
+    "arquivo_png_limpo": "bebidas-prontas/03-blue-cold-brew-zero.png",
+    "arquivo_original": "bebidas-prontas/03-blue-cold-brew-zero.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/bebidas-prontas/03-blue-cold-brew-zero.png"
+  },
+  {
+    "idx": 4,
+    "produto": "Blue Reserve",
+    "categoria": "cafes-especiais",
+    "arquivo_png_limpo": "cafes-especiais/04-blue-reserve.png",
+    "arquivo_original": "cafes-especiais/04-blue-reserve.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/cafes-especiais/04-blue-reserve.png"
+  },
+  {
+    "idx": 5,
+    "produto": "Copa do Mundo",
+    "categoria": "cafes-edicoes",
+    "arquivo_png_limpo": "cafes-edicoes/05-copa-do-mundo.png",
+    "arquivo_original": "cafes-edicoes/05-copa-do-mundo.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/cafes-edicoes/05-copa-do-mundo.png"
+  },
+  {
+    "idx": 6,
+    "produto": "Blue Intense",
+    "categoria": "cafes-classicos",
+    "arquivo_png_limpo": "cafes-classicos/06-blue-intense.png",
+    "arquivo_original": "cafes-classicos/06-blue-intense.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/cafes-classicos/06-blue-intense.png"
+  },
+  {
+    "idx": 7,
+    "produto": "Blue Capsules",
+    "categoria": "capsulas-e-drip",
+    "arquivo_png_limpo": "capsulas-e-drip/07-blue-capsules.png",
+    "arquivo_original": "capsulas-e-drip/07-blue-capsules.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/capsulas-e-drip/07-blue-capsules.png"
+  },
+  {
+    "idx": 8,
+    "produto": "Blue Mocha",
+    "categoria": "bebidas-prontas",
+    "arquivo_png_limpo": "bebidas-prontas/08-blue-mocha.png",
+    "arquivo_original": "bebidas-prontas/08-blue-mocha.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/bebidas-prontas/08-blue-mocha.png"
+  },
+  {
+    "idx": 9,
+    "produto": "Blue Ritual Kit",
+    "categoria": "kits",
+    "arquivo_png_limpo": "kits/09-blue-ritual-kit.png",
+    "arquivo_original": "kits/09-blue-ritual-kit.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/kits/09-blue-ritual-kit.png"
+  },
+  {
+    "idx": 10,
+    "produto": "Blue Drip",
+    "categoria": "capsulas-e-drip",
+    "arquivo_png_limpo": "capsulas-e-drip/10-blue-drip.png",
+    "arquivo_original": "capsulas-e-drip/10-blue-drip.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/capsulas-e-drip/10-blue-drip.png"
+  },
+  {
+    "idx": 11,
+    "produto": "Blue Coconut Latte",
+    "categoria": "bebidas-prontas",
+    "arquivo_png_limpo": "bebidas-prontas/11-blue-coconut-latte.png",
+    "arquivo_original": "bebidas-prontas/11-blue-coconut-latte.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/bebidas-prontas/11-blue-coconut-latte.png"
+  },
+  {
+    "idx": 12,
+    "produto": "Dia dos Namorados",
+    "categoria": "cafes-edicoes",
+    "arquivo_png_limpo": "cafes-edicoes/12-dia-dos-namorados.png",
+    "arquivo_original": "cafes-edicoes/12-dia-dos-namorados.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/cafes-edicoes/12-dia-dos-namorados.png"
+  },
+  {
+    "idx": 13,
+    "produto": "Blue Cookies",
+    "categoria": "acompanhamentos",
+    "arquivo_png_limpo": "acompanhamentos/13-blue-cookies.png",
+    "arquivo_original": "acompanhamentos/13-blue-cookies.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/acompanhamentos/13-blue-cookies.png"
+  },
+  {
+    "idx": 14,
+    "produto": "Blue Cappuccino Ice",
+    "categoria": "bebidas-prontas",
+    "arquivo_png_limpo": "bebidas-prontas/14-blue-cappuccino-ice.png",
+    "arquivo_original": "bebidas-prontas/14-blue-cappuccino-ice.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/bebidas-prontas/14-blue-cappuccino-ice.png"
+  },
+  {
+    "idx": 15,
+    "produto": "Copo Blue Coffee",
+    "categoria": "imagens-apoio",
+    "arquivo_png_limpo": "imagens-apoio/15-copo-blue-coffee-janela.png",
+    "arquivo_original": "imagens-apoio/15-copo-blue-coffee-janela.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/imagens-apoio/15-copo-blue-coffee-janela.png"
+  },
+  {
+    "idx": 16,
+    "produto": "Festa Junina",
+    "categoria": "cafes-edicoes",
+    "arquivo_png_limpo": "cafes-edicoes/16-festa-junina.png",
+    "arquivo_original": "cafes-edicoes/16-festa-junina.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/cafes-edicoes/16-festa-junina.png"
+  },
+  {
+    "idx": 17,
+    "produto": "Blue Latte",
+    "categoria": "bebidas-prontas",
+    "arquivo_png_limpo": "bebidas-prontas/17-blue-latte.png",
+    "arquivo_original": "bebidas-prontas/17-blue-latte.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/bebidas-prontas/17-blue-latte.png"
+  },
+  {
+    "idx": 18,
+    "produto": "Blue Light",
+    "categoria": "cafes-classicos",
+    "arquivo_png_limpo": "cafes-classicos/18-blue-light.png",
+    "arquivo_original": "cafes-classicos/18-blue-light.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/cafes-classicos/18-blue-light.png"
+  },
+  {
+    "idx": 19,
+    "produto": "Copo Blue Coffee Outdoor",
+    "categoria": "imagens-apoio",
+    "arquivo_png_limpo": "imagens-apoio/19-copo-blue-coffee-outdoor.png",
+    "arquivo_original": "imagens-apoio/19-copo-blue-coffee-outdoor.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/imagens-apoio/19-copo-blue-coffee-outdoor.png"
+  },
+  {
+    "idx": 20,
+    "produto": "Blue Gourmet",
+    "categoria": "cafes-classicos",
+    "arquivo_png_limpo": "cafes-classicos/20-blue-gourmet.png",
+    "arquivo_original": "cafes-classicos/20-blue-gourmet.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/cafes-classicos/20-blue-gourmet.png"
+  },
+  {
+    "idx": 21,
+    "produto": "Blue Vanilla Latte",
+    "categoria": "bebidas-prontas",
+    "arquivo_png_limpo": "bebidas-prontas/21-blue-vanilla-latte.png",
+    "arquivo_original": "bebidas-prontas/21-blue-vanilla-latte.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/bebidas-prontas/21-blue-vanilla-latte.png"
+  },
+  {
+    "idx": 22,
+    "produto": "Blue Gift Box",
+    "categoria": "kits",
+    "arquivo_png_limpo": "kits/22-blue-gift-box.png",
+    "arquivo_original": "kits/22-blue-gift-box.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/kits/22-blue-gift-box.png"
+  },
+  {
+    "idx": 23,
+    "produto": "Blue Hazelnut",
+    "categoria": "bebidas-prontas",
+    "arquivo_png_limpo": "bebidas-prontas/23-blue-hazelnut.png",
+    "arquivo_original": "bebidas-prontas/23-blue-hazelnut.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/bebidas-prontas/23-blue-hazelnut.png"
+  },
+  {
+    "idx": 24,
+    "produto": "Blue Cold Brew",
+    "categoria": "cold-brew",
+    "arquivo_png_limpo": "cold-brew/24-blue-cold-brew.png",
+    "arquivo_original": "cold-brew/24-blue-cold-brew.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/cold-brew/24-blue-cold-brew.png"
+  },
+  {
+    "idx": 25,
+    "produto": "Blue Double Expresso",
+    "categoria": "bebidas-prontas",
+    "arquivo_png_limpo": "bebidas-prontas/25-blue-double-expresso.png",
+    "arquivo_original": "bebidas-prontas/25-blue-double-expresso.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/bebidas-prontas/25-blue-double-expresso.png"
+  },
+  {
+    "idx": 26,
+    "produto": "Natal",
+    "categoria": "cafes-edicoes",
+    "arquivo_png_limpo": "cafes-edicoes/26-natal.png",
+    "arquivo_original": "cafes-edicoes/26-natal.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/cafes-edicoes/26-natal.png"
+  },
+  {
+    "idx": 27,
+    "produto": "Blue Caramel Latte",
+    "categoria": "bebidas-prontas",
+    "arquivo_png_limpo": "bebidas-prontas/27-blue-caramel-latte.png",
+    "arquivo_original": "bebidas-prontas/27-blue-caramel-latte.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/bebidas-prontas/27-blue-caramel-latte.png"
+  },
+  {
+    "idx": 28,
+    "produto": "Blue Selection",
+    "categoria": "kits",
+    "arquivo_png_limpo": "kits/28-blue-selection.png",
+    "arquivo_original": "kits/28-blue-selection.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/kits/28-blue-selection.png"
+  },
+  {
+    "idx": 29,
+    "produto": "Blue Classic",
+    "categoria": "cafes-classicos",
+    "arquivo_png_limpo": "cafes-classicos/29-blue-classic.png",
+    "arquivo_original": "cafes-classicos/29-blue-classic.jpeg",
+    "asset_path_sugerido": "assets/produtos-blue-coffee-fotos/cafes-classicos/29-blue-classic.png"
+  }
+]

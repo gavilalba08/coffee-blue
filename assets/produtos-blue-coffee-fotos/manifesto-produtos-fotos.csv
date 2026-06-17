@@ -1,0 +1,30 @@
+idx,produto,categoria,arquivo_png_limpo,arquivo_original,asset_path_sugerido
+1,Blue Cacao,cafes-especiais,cafes-especiais/01-blue-cacao.png,cafes-especiais/01-blue-cacao.jpeg,assets/produtos-blue-coffee-fotos/cafes-especiais/01-blue-cacao.png
+2,Blue Oat Latte,bebidas-prontas,bebidas-prontas/02-blue-oat-latte.png,bebidas-prontas/02-blue-oat-latte.jpeg,assets/produtos-blue-coffee-fotos/bebidas-prontas/02-blue-oat-latte.png
+3,Blue Cold Brew Zero,bebidas-prontas,bebidas-prontas/03-blue-cold-brew-zero.png,bebidas-prontas/03-blue-cold-brew-zero.jpeg,assets/produtos-blue-coffee-fotos/bebidas-prontas/03-blue-cold-brew-zero.png
+4,Blue Reserve,cafes-especiais,cafes-especiais/04-blue-reserve.png,cafes-especiais/04-blue-reserve.jpeg,assets/produtos-blue-coffee-fotos/cafes-especiais/04-blue-reserve.png
+5,Copa do Mundo,cafes-edicoes,cafes-edicoes/05-copa-do-mundo.png,cafes-edicoes/05-copa-do-mundo.jpeg,assets/produtos-blue-coffee-fotos/cafes-edicoes/05-copa-do-mundo.png
+6,Blue Intense,cafes-classicos,cafes-classicos/06-blue-intense.png,cafes-classicos/06-blue-intense.jpeg,assets/produtos-blue-coffee-fotos/cafes-classicos/06-blue-intense.png
+7,Blue Capsules,capsulas-e-drip,capsulas-e-drip/07-blue-capsules.png,capsulas-e-drip/07-blue-capsules.jpeg,assets/produtos-blue-coffee-fotos/capsulas-e-drip/07-blue-capsules.png
+8,Blue Mocha,bebidas-prontas,bebidas-prontas/08-blue-mocha.png,bebidas-prontas/08-blue-mocha.jpeg,assets/produtos-blue-coffee-fotos/bebidas-prontas/08-blue-mocha.png
+9,Blue Ritual Kit,kits,kits/09-blue-ritual-kit.png,kits/09-blue-ritual-kit.jpeg,assets/produtos-blue-coffee-fotos/kits/09-blue-ritual-kit.png
+10,Blue Drip,capsulas-e-drip,capsulas-e-drip/10-blue-drip.png,capsulas-e-drip/10-blue-drip.jpeg,assets/produtos-blue-coffee-fotos/capsulas-e-drip/10-blue-drip.png
+11,Blue Coconut Latte,bebidas-prontas,bebidas-prontas/11-blue-coconut-latte.png,bebidas-prontas/11-blue-coconut-latte.jpeg,assets/produtos-blue-coffee-fotos/bebidas-prontas/11-blue-coconut-latte.png
+12,Dia dos Namorados,cafes-edicoes,cafes-edicoes/12-dia-dos-namorados.png,cafes-edicoes/12-dia-dos-namorados.jpeg,assets/produtos-blue-coffee-fotos/cafes-edicoes/12-dia-dos-namorados.png
+13,Blue Cookies,acompanhamentos,acompanhamentos/13-blue-cookies.png,acompanhamentos/13-blue-cookies.jpeg,assets/produtos-blue-coffee-fotos/acompanhamentos/13-blue-cookies.png
+14,Blue Cappuccino Ice,bebidas-prontas,bebidas-prontas/14-blue-cappuccino-ice.png,bebidas-prontas/14-blue-cappuccino-ice.jpeg,assets/produtos-blue-coffee-fotos/bebidas-prontas/14-blue-cappuccino-ice.png
+15,Copo Blue Coffee,imagens-apoio,imagens-apoio/15-copo-blue-coffee-janela.png,imagens-apoio/15-copo-blue-coffee-janela.jpeg,assets/produtos-blue-coffee-fotos/imagens-apoio/15-copo-blue-coffee-janela.png
+16,Festa Junina,cafes-edicoes,cafes-edicoes/16-festa-junina.png,cafes-edicoes/16-festa-junina.jpeg,assets/produtos-blue-coffee-fotos/cafes-edicoes/16-festa-junina.png
+17,Blue Latte,bebidas-prontas,bebidas-prontas/17-blue-latte.png,bebidas-prontas/17-blue-latte.jpeg,assets/produtos-blue-coffee-fotos/bebidas-prontas/17-blue-latte.png
+18,Blue Light,cafes-classicos,cafes-classicos/18-blue-light.png,cafes-classicos/18-blue-light.jpeg,assets/produtos-blue-coffee-fotos/cafes-classicos/18-blue-light.png
+19,Copo Blue Coffee Outdoor,imagens-apoio,imagens-apoio/19-copo-blue-coffee-outdoor.png,imagens-apoio/19-copo-blue-coffee-outdoor.jpeg,assets/produtos-blue-coffee-fotos/imagens-apoio/19-copo-blue-coffee-outdoor.png
+20,Blue Gourmet,cafes-classicos,cafes-classicos/20-blue-gourmet.png,cafes-classicos/20-blue-gourmet.jpeg,assets/produtos-blue-coffee-fotos/cafes-classicos/20-blue-gourmet.png
+21,Blue Vanilla Latte,bebidas-prontas,bebidas-prontas/21-blue-vanilla-latte.png,bebidas-prontas/21-blue-vanilla-latte.jpeg,assets/produtos-blue-coffee-fotos/bebidas-prontas/21-blue-vanilla-latte.png
+22,Blue Gift Box,kits,kits/22-blue-gift-box.png,kits/22-blue-gift-box.jpeg,assets/produtos-blue-coffee-fotos/kits/22-blue-gift-box.png
+23,Blue Hazelnut,bebidas-prontas,bebidas-prontas/23-blue-hazelnut.png,bebidas-prontas/23-blue-hazelnut.jpeg,assets/produtos-blue-coffee-fotos/bebidas-prontas/23-blue-hazelnut.png
+24,Blue Cold Brew,cold-brew,cold-brew/24-blue-cold-brew.png,cold-brew/24-blue-cold-brew.jpeg,assets/produtos-blue-coffee-fotos/cold-brew/24-blue-cold-brew.png
+25,Blue Double Expresso,bebidas-prontas,bebidas-prontas/25-blue-double-expresso.png,bebidas-prontas/25-blue-double-expresso.jpeg,assets/produtos-blue-coffee-fotos/bebidas-prontas/25-blue-double-expresso.png
+26,Natal,cafes-edicoes,cafes-edicoes/26-natal.png,cafes-edicoes/26-natal.jpeg,assets/produtos-blue-coffee-fotos/cafes-edicoes/26-natal.png
+27,Blue Caramel Latte,bebidas-prontas,bebidas-prontas/27-blue-caramel-latte.png,bebidas-prontas/27-blue-caramel-latte.jpeg,assets/produtos-blue-coffee-fotos/bebidas-prontas/27-blue-caramel-latte.png
+28,Blue Selection,kits,kits/28-blue-selection.png,kits/28-blue-selection.jpeg,assets/produtos-blue-coffee-fotos/kits/28-blue-selection.png
+29,Blue Classic,cafes-classicos,cafes-classicos/29-blue-classic.png,cafes-classicos/29-blue-classic.jpeg,assets/produtos-blue-coffee-fotos/cafes-classicos/29-blue-classic.png
