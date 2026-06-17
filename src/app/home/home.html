@@ -25,7 +25,7 @@
         @for (link of navLinks; track link.label) {
           <li class="nav__item">
             @if (link.routerLink) {
-              <a class="nav__link" [routerLink]="link.routerLink" (click)="closeSelectedCeo()">{{
+              <a class="nav__link" [routerLink]="link.routerLink" (click)="closeMenu()">{{
                 link.label
               }}</a>
             } @else {
