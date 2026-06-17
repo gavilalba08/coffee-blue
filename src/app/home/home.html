@@ -29,7 +29,7 @@
                 link.label
               }}</a>
             } @else {
-              <a class="nav__link" [href]="link.href" (click)="goToAnchor(link.href, $event)">{{ link.label }}</a>
+              <a class="nav__link" [href]="link.href" (click)="goToAnchor(link.href, $event); closeMenu()">{{ link.label }}</a>
             }
           </li>
         }

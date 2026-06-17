@@ -510,6 +510,25 @@ export class Home {
     }, 360);
   }
 
+
+  @HostListener('document:click', ['$event'])
+  onMobileMenuDocumentClick(event: MouseEvent): void {
+    if (!this.isMenuOpen()) return;
+
+    const target = event.target as HTMLElement | null;
+    if (!target) return;
+
+    const clickedInsideHeader = target.closest('.header');
+    const clickedInsideNav = target.closest('.nav');
+    const clickedToggle = target.closest('.menu-toggle');
+
+    if (clickedInsideNav || clickedToggle || clickedInsideHeader) {
+      return;
+    }
+
+    this.closeMenu();
+  }
+
   toggleMenu(): void {
     this.isMenuOpen.update((open) => !open);
   }
@@ -644,6 +663,7 @@ export class Home {
 
   @HostListener('document:keydown.escape')
   closeCeoOnEscape(): void {
+    this.closeMenu();
     this.closeCeo();
   }
 
