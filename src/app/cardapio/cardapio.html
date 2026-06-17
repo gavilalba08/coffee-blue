@@ -1,0 +1,105 @@
+<header class="cp-header">
+  <a class="cp-header__brand" routerLink="/" aria-label="Voltar para a página inicial da Blue Coffee">
+    <img src="assets/brand/header-logo-white.png" alt="Blue Coffee" />
+  </a>
+
+  <div class="cp-header__title">
+    <span>Cardápio Digital</span>
+    <strong>Escolha seus produtos</strong>
+  </div>
+
+  <a class="cp-header__back" routerLink="/">Voltar ao site</a>
+</header>
+
+<main class="cp-page">
+  <section class="cp-hero">
+    <span class="cp-eyebrow">Blue Coffee</span>
+    <h1>Cardápio Digital</h1>
+    <p>Escolha seus cafés, bebidas e produtos favoritos. Um cardápio simples, elegante e direto para o seu pedido.</p>
+  </section>
+
+  <section class="cp-layout" aria-label="Cardápio digital da Blue Coffee">
+    <aside class="cp-sidebar" aria-label="Categorias do cardápio">
+      <span class="cp-sidebar__label">Menu</span>
+
+      <div class="cp-category-list">
+        @for (category of categories; track category.id) {
+          <button
+            type="button"
+            class="cp-category"
+            [class.cp-category--active]="activeCategory() === category.id"
+            (click)="setCategory(category.id)"
+          >
+            <span>{{ category.label }}</span>
+            <small>{{ category.subtitle }}</small>
+          </button>
+        }
+      </div>
+    </aside>
+
+    <section class="cp-products-section">
+      <div class="cp-products-heading">
+        <div>
+          <span class="cp-eyebrow">Categoria</span>
+          <h2>{{ activeCategoryData().label }}</h2>
+          <p>{{ activeCategoryData().subtitle }}</p>
+        </div>
+      </div>
+
+      <div class="cp-products-grid">
+        @for (product of filteredProducts(); track product.id) {
+          <article class="cp-product-card">
+            <div class="cp-product-card__media">
+              <img [src]="product.image" [alt]="product.name" loading="lazy" />
+            </div>
+
+            <div class="cp-product-card__body">
+              <h3>{{ product.name }}</h3>
+              <p>{{ product.description }}</p>
+            </div>
+
+            <div class="cp-product-card__footer">
+              <strong>{{ formatPrice(product.price) }}</strong>
+
+              <div class="cp-quantity" aria-label="Quantidade">
+                <button type="button" (click)="decrease(product.id)" [disabled]="quantityOf(product.id) === 0">
+                  −
+                </button>
+                <span>{{ quantityOf(product.id) }}</span>
+                <button type="button" (click)="increase(product.id)">+</button>
+              </div>
+            </div>
+          </article>
+        }
+      </div>
+    </section>
+
+    <aside class="cp-cart" aria-label="Resumo do pedido">
+      <span class="cp-cart__label">Resumo</span>
+      <h2>Seu pedido</h2>
+
+      @if (cartItems().length === 0) {
+        <p class="cp-cart__empty">Adicione produtos ao pedido para ver o resumo aqui.</p>
+      } @else {
+        <div class="cp-cart__items">
+          @for (item of cartItems(); track item.product.id) {
+            <div class="cp-cart-item">
+              <div>
+                <strong>{{ item.product.name }}</strong>
+                <small>{{ item.quantity }} × {{ formatPrice(item.product.price) }}</small>
+              </div>
+              <span>{{ formatPrice(item.product.price * item.quantity) }}</span>
+            </div>
+          }
+        </div>
+
+        <div class="cp-cart__total">
+          <span>Total</span>
+          <strong>{{ formatPrice(cartTotal()) }}</strong>
+        </div>
+
+        <button type="button" class="cp-cart__clear" (click)="clearCart()">Limpar pedido</button>
+      }
+    </aside>
+  </section>
+</main>

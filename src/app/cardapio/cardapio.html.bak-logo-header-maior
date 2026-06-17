@@ -1,0 +1,160 @@
+<div class="cp-page">
+  @if (confirmed()) {
+    <div class="cp-confirmed" role="main">
+      <div class="cp-confirmed__inner">
+        <img
+          ngSrc="assets/designs/coffee-blue-design-06.png"
+          width="200"
+          height="300"
+          class="cp-confirmed__mascote"
+          alt=""
+          aria-hidden="true"
+        />
+        <h1 class="cp-confirmed__title">Pedido enviado!</h1>
+        <p class="cp-confirmed__text">
+          Recebemos seu pedido e entraremos em contato pelo número informado em breve.
+        </p>
+        <a class="btn btn--gold" routerLink="/">Voltar ao início</a>
+      </div>
+    </div>
+  } @else {
+    <!-- Header -->
+    <header class="cp-header">
+      <a class="cp-header__brand" routerLink="/" aria-label="Voltar ao site Blue Coffee">
+        <img
+          ngSrc="assets/designs/coffee-blue-design-04.png"
+          width="480"
+          height="120"
+          priority
+          class="cp-header__wordmark"
+          alt="Blue Coffee"
+        />
+      </a>
+      <div class="cp-header__right">
+        <span class="cp-header__subtitle">Cardápio Digital</span>
+        <img
+          ngSrc="assets/designs/coffee-blue-design-06.png"
+          width="200"
+          height="300"
+          class="cp-header__mascote"
+          alt=""
+          aria-hidden="true"
+        />
+      </div>
+    </header>
+
+    <!-- Categories -->
+    <nav class="cp-categories" aria-label="Categorias do cardápio">
+      @for (cat of categories; track cat.id) {
+        <button
+          type="button"
+          class="cp-cat-btn"
+          [class.cp-cat-btn--active]="activeCategory() === cat.id"
+          (click)="setCategory(cat.id)"
+        >
+          {{ cat.label }}
+        </button>
+      }
+    </nav>
+
+    <!-- Main: products + cart -->
+    <div class="cp-layout">
+      <main class="cp-products" id="cardapio-content" aria-label="Produtos">
+        <div class="cp-products__grid">
+          @for (product of filteredProducts(); track product.id) {
+            <article class="cp-product-card">
+              <div class="cp-product-card__img-wrap">
+                <img
+                  [ngSrc]="product.image"
+                  width="300"
+                  height="300"
+                  [alt]="product.name"
+                  class="cp-product-card__img"
+                />
+              </div>
+              <div class="cp-product-card__body">
+                <h2 class="cp-product-card__name">{{ product.name }}</h2>
+                <p class="cp-product-card__desc">{{ product.description }}</p>
+                <div class="cp-product-card__footer">
+                  <span class="cp-product-card__price">{{ formatPrice(product.price) }}</span>
+                  <div
+                    class="cp-qty"
+                    [attr.aria-label]="'Quantidade de ' + product.name + ': ' + quantityOf(product.id)"
+                  >
+                    <button
+                      type="button"
+                      class="cp-qty__btn"
+                      [disabled]="quantityOf(product.id) === 0"
+                      (click)="decrement(product.id)"
+                      aria-label="Diminuir quantidade"
+                    >
+                      −
+                    </button>
+                    <span class="cp-qty__value">{{ quantityOf(product.id) }}</span>
+                    <button
+                      type="button"
+                      class="cp-qty__btn cp-qty__btn--add"
+                      (click)="increment(product.id)"
+                      aria-label="Adicionar ao pedido"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          }
+        </div>
+      </main>
+
+      <!-- Cart -->
+      @if (cartCount() > 0) {
+        <aside class="cp-cart" aria-label="Resumo do pedido">
+          <h2 class="cp-cart__title">Resumo do pedido</h2>
+
+          <ul class="cp-cart__list" aria-label="Itens no pedido">
+            @for (entry of cartEntries(); track entry.product.id) {
+              <li class="cp-cart__item">
+                <span class="cp-cart__item-name">{{ entry.quantity }}x {{ entry.product.name }}</span>
+                <span class="cp-cart__item-price">{{
+                  formatPrice(entry.product.price * entry.quantity)
+                }}</span>
+              </li>
+            }
+          </ul>
+
+          <div class="cp-cart__total">
+            <span>Total</span>
+            <span>{{ formatPrice(cartTotal()) }}</span>
+          </div>
+
+          <div class="cp-cart__phone">
+            <label class="cp-cart__phone-label" for="phone-input">Telefone para contato</label>
+            <input
+              id="phone-input"
+              type="tel"
+              class="cp-cart__phone-input"
+              placeholder="(11) 99999-9999"
+              [value]="phone()"
+              (input)="updatePhone($event)"
+              autocomplete="tel"
+            />
+          </div>
+
+          <button
+            type="button"
+            class="btn btn--gold cp-cart__finalize"
+            [disabled]="!canFinalize()"
+            (click)="finalizeOrder()"
+          >
+            Finalizar pedido
+          </button>
+
+          @if (cartCount() > 0 && phone().trim().length > 0 && phone().trim().length < 8) {
+            <p class="cp-cart__hint" role="alert">Informe um telefone válido para finalizar.</p>
+          }
+        </aside>
+      }
+    </div>
+  }
+</div>
