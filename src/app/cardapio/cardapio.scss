@@ -490,3 +490,27 @@
     height: 240px;
   }
 }
+
+
+/* PATCH FINAL — LOGO HEADER CARDÁPIO */
+.cp-header .logo,
+.cardapio-header .logo,
+.menu-header .logo,
+.header .logo {
+  min-width: 118px !important;
+  height: 74px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+.cp-header .logo img,
+.cardapio-header .logo img,
+.menu-header .logo img,
+.header .logo img,
+.logo__image {
+  height: 58px !important;
+  max-height: 58px !important;
+  width: auto !important;
+  max-width: 132px !important;
+  object-fit: contain !important;
+}

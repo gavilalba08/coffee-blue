@@ -2802,3 +2802,74 @@ html {
     margin-inline: auto !important;
   }
 }
+
+
+/* PATCH FINAL — LOGOS HEADER E FOOTER */
+.header .logo,
+.header__inner .logo {
+  width: auto !important;
+  min-width: 118px !important;
+  height: 74px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+}
+
+.header .logo__image,
+.header__inner .logo__image,
+.logo__image {
+  width: auto !important;
+  height: 58px !important;
+  max-height: 58px !important;
+  max-width: 132px !important;
+  object-fit: contain !important;
+  display: block !important;
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+.header.header--scrolled .logo,
+.header--scrolled .logo {
+  height: 74px !important;
+}
+
+.header.header--scrolled .logo__image,
+.header--scrolled .logo__image {
+  height: 58px !important;
+  max-height: 58px !important;
+  transform: none !important;
+}
+
+.footer__logo-img,
+.footer img[alt="Blue Coffee"] {
+  width: auto !important;
+  height: 46px !important;
+  max-height: 46px !important;
+  max-width: 140px !important;
+  object-fit: contain !important;
+  display: block !important;
+  margin: 0 auto 1rem !important;
+}
+
+@media (max-width: 760px) {
+  .header .logo,
+  .header__inner .logo {
+    min-width: 96px !important;
+    height: 64px !important;
+  }
+
+  .header .logo__image,
+  .header__inner .logo__image,
+  .logo__image {
+    height: 48px !important;
+    max-height: 48px !important;
+    max-width: 110px !important;
+  }
+
+  .footer__logo-img,
+  .footer img[alt="Blue Coffee"] {
+    height: 40px !important;
+    max-height: 40px !important;
+  }
+}
